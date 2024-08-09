@@ -8,29 +8,68 @@ body {
     margin: 0 auto;
 }
 
+.text-center {
+    text-align: center;
+}
+
 .grid {
     display: grid;
     grid-gap: 64px;
 }
 
+.img-responsive {
+    max-width: 100%;
+    display: block;
+}
+
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
+}
 
+.grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr; 
 }
 
 .grid-3-columns-with-first-narrow {
     grid-template-columns: 1fr 2fr 2fr;   
 }
 
-.img-responsive {
-    max-width: 100%;
+.card {
+    background: white;
+    margin: 30px 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+}
+.btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background: #462cb3;
+    text-decoration: none;
 }
 
 section {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 100px 0;
 }
+
+section.secondary-section {
+    background: #f8f8f8;
+} 
+
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
@@ -64,27 +103,6 @@ header h3 {
     margin: 0;
 }
 
-footer p {
-    font-weight: 400;
-    font-size: 16px;
-    opacity: 0.7;
-    margin-right: 20px; 
-}
-
-footer ul {
-    padding: 0;
-}
-
-footer li {
-    list-style: none;
-}
-
-footer a {
-    color: white;
-    opacity: 0.7;
-    margin: 0;
-    padding: 0;
-}
 
 header a {
     font-weight: 700;
@@ -100,6 +118,14 @@ header a {
     text-transform: uppercase;
     background: white;
 }
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    opacity: 0.7;
+    margin-right: 20px; 
+}
+
 
 main {
     background-color: white;
@@ -133,8 +159,23 @@ main p {
     opacity: 0.7;
 }
 
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+}
 footer {
-    background: #272044;
+    /*background: #272044;*/
     color: white;
     background-image: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)),    
     url("../images/budapestview.jpg");
@@ -148,6 +189,21 @@ footer h3 {
     line-height: 30px;
 }
 
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer a {
+    color: white;
+    opacity: 0.7;
+}
 
 @media (max-width: 960px) {
     header {
