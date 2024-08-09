@@ -15,13 +15,22 @@ body {
 
 .grid-2-columns {
     grid-template-columns: 1fr 1fr;
+
 }
+
+.grid-3-columns-with-first-narrow {
+    grid-template-columns: 1fr 2fr 2fr;   
+}
+
+.img-responsive {
+    max-width: 100%;
+}
+
 section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
 }
-
 
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4)),
@@ -155,5 +164,14 @@ footer h3 {
 
     header h3 {
         font-size: 12px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px; 
+    }
+
+    section {
+        padding: 30px;
     }
 }
