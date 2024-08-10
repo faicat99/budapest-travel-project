@@ -18,7 +18,7 @@ body {
 }
 
 .img-responsive {
-    max-width: 100%;
+    width: 100%;
     display: block;
 }
 
@@ -34,9 +34,17 @@ body {
     grid-template-columns: 1fr 2fr 2fr;   
 }
 
+.embed {
+    width: 100%;    
+}
+
 .card {
     background: white;
     margin: 30px 0;
+}
+
+.card-header.grid {
+    grid-gap: none;
 }
 
 .card-body {
@@ -46,6 +54,7 @@ body {
 .card-footer {
     padding: 0 30px 30px;
 }
+
 .btn {
     display: block;
     color: white;
@@ -61,7 +70,7 @@ body {
 }
 
 section {
-    max-width: 100%;
+    max-width: 95%;
     margin: 0 auto;
     padding: 100px 0;
 }
@@ -189,7 +198,6 @@ footer h3 {
     line-height: 30px;
 }
 
-
 footer ul {
     padding: 0;
 }
@@ -229,5 +237,13 @@ footer a {
 
     section {
         padding: 30px;
+    }
+
+    .card-header img {
+        display: none;
+    }
+
+    .embed {
+        aspect-ratio: 16 /9;
     }
 }
